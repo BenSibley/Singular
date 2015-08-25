@@ -1,0 +1,86 @@
+.more-link {
+  padding: 0;
+  border: none;
+  @extend %uppercase;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+    color: $color-gray-42;
+    text-decoration: underline;
+
+    &:before {
+      color: $color-gray-20;
+      text-decoration: none;
+    }
+  }
+  &:before {
+    content: '\f02d';
+    font-family: 'FontAwesome';
+    display: inline-block;
+    margin-right: 6px;
+    transition: all 0.1s ease-in-out;
+  }
+}
+.comments-link {
+  @extend %uppercase;
+}
+.blog,
+.archive,
+.search {
+
+  .post-content {
+    border-bottom: solid 1px $color-gray-91;
+
+    p:nth-last-child(3) {
+      padding-bottom: $baseline-height / 2;
+    }
+    p:last-of-type {
+      margin-top: 0;
+      padding-bottom: $baseline-height;
+    }
+  }
+}
+
+.loop-pagination {
+  position: relative;
+  margin: $baseline-height 0;
+  text-align: center;
+
+  .next,
+  .prev {
+    position: absolute;
+    font-weight: 700;
+    color: $color-gray-20;
+
+    &:link,
+    &:visited {
+      color: $color-gray-20;
+    }
+  }
+  .next {
+    right: $column * 1.5;
+    margin-right: 0;
+  }
+  .prev {
+    left: $column * 1.5;
+    margin-left: 0;
+  }
+}
+.sticky-status {
+  @extend %uppercase;
+}
+
+@media all and (min-width: $nine-hundred) {
+
+  .loop-pagination {
+
+    .next {
+      right: 0;
+    }
+    .prev {
+      left: 0;
+    }
+  }
+}
