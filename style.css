@@ -27,3 +27,82 @@ It's not recommended to add CSS to this file, as it will be lost if you ever upd
 /* Social Media Brand Colors */
 /*===== Mixins =====*/
 /***** Silent Classes *****/
+body {
+  background: #f2f2f2;
+}
+
+@media all and (min-width: 37.5em) {
+  .main {
+    padding: 0 4.6875%;
+  }
+}
+@media all and (min-width: 56.25em) {
+  .overflow-container {
+    padding: 0;
+  }
+}
+.post {
+  background: white;
+  margin: 1.5em 0;
+  box-shadow: 0 1px 2px 0 #e8e8e8;
+}
+
+.post-container {
+  padding: 1.5em 5.17031%;
+}
+
+.post-header {
+  margin-top: 0;
+}
+
+@media all and (min-width: 37.5em) {
+  .post {
+    padding: 0;
+  }
+}
+.site-header {
+  background: white;
+  padding: 3em 4.6875%;
+  margin-bottom: 3em;
+  box-shadow: 0 1px 2px 0 #e8e8e8;
+}
+
+.menu-primary-container {
+  margin: 0;
+}
+
+.title-container {
+  margin-bottom: 0;
+}
+
+.toggle-navigation {
+  margin-top: 0;
+}
+
+.sidebar-primary {
+  background: white;
+  box-shadow: 0 1px 2px 0 #e8e8e8;
+  border-top: 0;
+}
+
+@media all and (min-width: 56.25em) {
+  .sidebar-primary {
+    margin-left: 0;
+    padding: 2.25em 4.6875%;
+  }
+  .sidebar-primary .widget {
+    padding-bottom: 2.25em;
+    margin-bottom: 2.25em;
+    border-bottom: solid 1px #e8e8e8;
+  }
+  .sidebar-primary .widget:last-child {
+    padding-bottom: 0;
+    border: none;
+  }
+  .sidebar-primary .widget ul {
+    margin-bottom: 0;
+  }
+  .sidebar-primary .widget ul li:last-of-type {
+    margin-bottom: 0;
+  }
+}

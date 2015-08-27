@@ -1,0 +1,18 @@
+.post {
+  background: white;
+  margin: $baseline-height 0;
+  box-shadow: 0 1px 2px 0 $color-gray-91;
+}
+.post-container {
+  padding: $baseline-height $column * 1.5 * 1.103;
+}
+.post-header {
+  margin-top: 0;
+}
+
+@media all and (min-width: $six-hundred){
+
+  .post {
+    padding: 0;
+  }
+}
