@@ -1,6 +1,6 @@
 .site-header {
   background: white;
-  padding: $baseline-height * 2 $column * 1.5;
+  padding: $baseline-height $column * 1.5;
   margin-bottom: $baseline-height * 2;
   box-shadow: 0 1px 2px 0 $color-gray-91;
 }
@@ -8,8 +8,18 @@
   margin: 0;
 }
 .title-container {
-  margin-bottom: 0;
+  margin: 0 auto $baseline-height;
 }
 .toggle-navigation {
-  margin-top: 0;
+  margin: 0 auto;
+}
+
+@media all and (min-width: $eight-hundred) {
+
+  .site-header {
+    padding-top: $baseline-height * 2;
+  }
+  .title-container {
+    margin-bottom: $baseline-height;
+  }
 }

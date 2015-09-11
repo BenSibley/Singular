@@ -29,6 +29,7 @@ It's not recommended to add CSS to this file, as it will be lost if you ever upd
 /***** Silent Classes *****/
 body {
   background: #f2f2f2;
+  color: #333333;
 }
 
 @media all and (min-width: 37.5em) {
@@ -48,11 +49,24 @@ body {
 }
 
 .post-container {
-  padding: 1.5em 5.17031%;
+  padding: 1.5em 5.17031% 0;
 }
 
 .post-header {
   margin-top: 0;
+}
+
+.post-date:after {
+  content: '/';
+  margin: 0 4px;
+}
+
+.post-title {
+  font-weight: 400;
+}
+
+.post-content {
+  margin-bottom: 0;
 }
 
 @media all and (min-width: 37.5em) {
@@ -60,9 +74,15 @@ body {
     padding: 0;
   }
 }
+@media all and (min-width: 56.25em) {
+  .post-title {
+    font-size: 1.75em;
+    line-height: 1.321;
+  }
+}
 .site-header {
   background: white;
-  padding: 3em 4.6875%;
+  padding: 1.5em 4.6875%;
   margin-bottom: 3em;
   box-shadow: 0 1px 2px 0 #e8e8e8;
 }
@@ -72,28 +92,50 @@ body {
 }
 
 .title-container {
-  margin-bottom: 0;
+  margin: 0 auto 1.5em;
 }
 
 .toggle-navigation {
-  margin-top: 0;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 50em) {
+  .site-header {
+    padding-top: 3em;
+  }
+
+  .title-container {
+    margin-bottom: 1.5em;
+  }
+}
+.more-link {
+  border: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-indent: -9999px;
+  font-size: 0;
+  transition: background 0.2s ease-in-out;
+}
+.more-link:hover, .more-link:active, .more-link:focus {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .sidebar-primary {
-  background: white;
-  box-shadow: 0 1px 2px 0 #e8e8e8;
   border-top: 0;
 }
 
 @media all and (min-width: 56.25em) {
   .sidebar-primary {
     margin-left: 0;
-    padding: 2.25em 4.6875%;
+    padding: 2.25em 0;
   }
   .sidebar-primary .widget {
-    padding-bottom: 2.25em;
-    margin-bottom: 2.25em;
-    border-bottom: solid 1px #e8e8e8;
+    margin-bottom: 3em;
   }
   .sidebar-primary .widget:last-child {
     padding-bottom: 0;
