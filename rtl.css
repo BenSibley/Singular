@@ -37,19 +37,25 @@ body {
     padding: 0 4.6875%;
   }
 }
+@media all and (min-width: 50em) {
+  .main {
+    padding: 0 6.25% 0 3.125%;
+  }
+}
 @media all and (min-width: 56.25em) {
   .overflow-container {
     padding: 0;
   }
 }
-.post {
+.entry {
+  position: relative;
   background: white;
   margin: 1.5em 0;
-  box-shadow: 0 1px 2px 0 #e8e8e8;
+  box-shadow: 0 1px 2px 0 #d8d8d8;
 }
 
 .post-container {
-  padding: 1.5em 5.17031% 0;
+  padding: 2.25em 5.17031% 0;
 }
 
 .post-header {
@@ -61,16 +67,12 @@ body {
   margin: 0 4px;
 }
 
-.post-title {
-  font-weight: 400;
-}
-
 .post-content {
   margin-bottom: 0;
 }
 
 @media all and (min-width: 37.5em) {
-  .post {
+  .entry {
     padding: 0;
   }
 }
@@ -87,6 +89,12 @@ body {
   box-shadow: 0 1px 2px 0 #e8e8e8;
 }
 
+.site-title {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
 .menu-primary-container {
   margin: 0;
 }
@@ -101,11 +109,21 @@ body {
 
 @media all and (min-width: 50em) {
   .site-header {
-    padding-top: 3em;
+    padding: 2.25em 6.25% 1.5em;
   }
 
   .title-container {
     margin-bottom: 1.5em;
+  }
+}
+@media all and (min-width: 56.25em) {
+  .site-title {
+    font-size: 2.3125em;
+    line-height: 1.297;
+  }
+
+  .tagline {
+    margin-top: 0;
   }
 }
 .more-link {
@@ -125,14 +143,38 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
+@media all and (min-width: 56.25em) {
+  .blog .post-container,
+  .archive .post-container,
+  .search .post-container {
+    width: 70%;
+    position: relative;
+    z-index: 9;
+    margin: 0 auto;
+    top: -7.5em;
+    background: white;
+  }
+  .blog .entry:after,
+  .archive .entry:after,
+  .search .entry:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
 .sidebar-primary {
+  background: white;
+  box-shadow: 0 1px 2px 0 #d8d8d8;
   border-top: 0;
 }
 
 @media all and (min-width: 56.25em) {
   .sidebar-primary {
     margin-right: 0;
-    padding: 2.25em 0;
+    padding: 2.25em 1.5em;
   }
   .sidebar-primary .widget {
     margin-bottom: 3em;

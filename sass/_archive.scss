@@ -17,3 +17,34 @@
     background: rgba(255,255,255,0.3);
   }
 }
+
+@media all and (min-width: $nine-hundred) {
+
+  .blog,
+  .archive,
+  .search {
+
+    .featured-image {
+      //width: 30%;
+      //padding-bottom: 30%;
+      //float: left;
+    }
+    .post-container {
+      //float: left;
+      //padding: $baseline-height $column * 1.5 * 1.103 0;
+      //width: 70%;
+      width: 70%;
+      position: relative;
+      z-index: 9;
+      margin: 0 auto;
+      top: -$baseline-height * 5;
+      background: white;
+    }
+    .entry {
+
+      &:after {
+        @include clearfix;
+      }
+    }
+  }
+}

@@ -4,6 +4,11 @@
   margin-bottom: $baseline-height * 2;
   box-shadow: 0 1px 2px 0 $color-gray-91;
 }
+.site-title {
+  font-family: $primary-font-stack;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
 .menu-primary-container {
   margin: 0;
 }
@@ -17,9 +22,20 @@
 @media all and (min-width: $eight-hundred) {
 
   .site-header {
-    padding-top: $baseline-height * 2;
+    padding: $baseline-height * 1.5 $column * 2 $baseline-height;
   }
   .title-container {
     margin-bottom: $baseline-height;
+  }
+}
+
+@media all and (min-width: $nine-hundred) {
+
+  .site-title {
+    font-size: 2.3125em;
+    line-height: 1.297;
+  }
+  .tagline {
+    margin-top: 0;
   }
 }

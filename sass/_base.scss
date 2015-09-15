@@ -9,6 +9,12 @@ body {
     padding: 0 $column * 1.5;
   }
 }
+@media all and (min-width: $eight-hundred) {
+
+  .main {
+    padding: 0 $column 0 $column * 2;
+  }
+}
 @media all and (min-width: $nine-hundred) {
 
   .overflow-container {

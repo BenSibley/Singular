@@ -1,10 +1,11 @@
-.post {
+.entry {
+  position: relative;
   background: white;
   margin: $baseline-height 0;
-  box-shadow: 0 1px 2px 0 $color-gray-91;
+  box-shadow: 0 1px 2px 0 $color-gray-85;
 }
 .post-container {
-  padding: $baseline-height $column * 1.5 * 1.103 0;
+  padding: $baseline-height * 1.5 $column * 1.5 * 1.103 0;
 }
 .post-header {
   margin-top: 0;
@@ -16,16 +17,13 @@
     margin: 0 4px;
   }
 }
-.post-title {
-  font-weight: 400;
-}
 .post-content {
   margin-bottom: 0;
 }
 
 @media all and (min-width: $six-hundred){
 
-  .post {
+  .entry {
     padding: 0;
   }
 }
