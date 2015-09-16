@@ -17,17 +17,27 @@
     background: none;
   }
 }
-@
-.blog,
-.archive,
-.search {
+@media all and (min-width: $nine-hundred) {
 
-  .entry {
-    //backface-visibility: hidden;
+  .blog,
+  .archive,
+  .search {
 
-    &:hover {
-      box-shadow: 0 1px 5px 0 $color-gray-85;
-      transform: translateY(-4px);
+    .entry {
+      width: 48%;
+      float: left;
+      margin: 0 0 $baseline-height;
+
+      &:hover {
+        box-shadow: 0 1px 5px 0 $color-gray-85;
+        transform: translateY(-4px);
+      }
+      &:nth-child(odd) {
+        margin-right: 4%;
+      }
+    }
+    .post-container {
+      padding-top: $baseline-height;
     }
   }
 }
