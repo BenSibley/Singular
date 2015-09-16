@@ -9,42 +9,25 @@
   left: 0;
   text-indent: -9999px;
   font-size: 0;
-  transition: background 0.2s ease-in-out;
+  transition: background 0.1s ease;
 
   &:hover,
   &:active,
   &:focus {
-    background: rgba(255,255,255,0.3);
+    background: none;
   }
 }
+@
+.blog,
+.archive,
+.search {
 
-@media all and (min-width: $nine-hundred) {
+  .entry {
+    //backface-visibility: hidden;
 
-  .blog,
-  .archive,
-  .search {
-
-    .featured-image {
-      //width: 30%;
-      //padding-bottom: 30%;
-      //float: left;
-    }
-    .post-container {
-      //float: left;
-      //padding: $baseline-height $column * 1.5 * 1.103 0;
-      //width: 70%;
-      width: 70%;
-      position: relative;
-      z-index: 9;
-      margin: 0 auto;
-      top: -$baseline-height * 5;
-      background: white;
-    }
-    .entry {
-
-      &:after {
-        @include clearfix;
-      }
+    &:hover {
+      box-shadow: 0 1px 5px 0 $color-gray-85;
+      transform: translateY(-4px);
     }
   }
 }

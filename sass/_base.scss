@@ -17,6 +17,9 @@ body {
 }
 @media all and (min-width: $nine-hundred) {
 
+  .main {
+    width: $column * 19 * 1.103;
+  }
   .overflow-container {
     padding: 0;
   }

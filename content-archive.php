@@ -1,7 +1,7 @@
 <div <?php post_class(); ?>>
 	<?php do_action( 'archive_post_before' ); ?>
 	<article>
-		<?php ct_apex_featured_image(); ?>
+<!--		--><?php //ct_apex_featured_image(); ?>
 		<div class="post-container">
 			<div class='post-header'>
 				<?php do_action( 'sticky_post_status' ); ?>
